@@ -4,57 +4,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nirvana AI</title>
+<meta name="description" content="Nirvana AI - Personal AI Assistant and Content Intelligence System">
+<title>NIRVANA AI | Personal Intelligence</title>
 <style>
-body {
-  margin: 0;
-  background: #101827;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:#091321;color:#edf7ff;
+ font-family:Arial,sans-serif;
 }
-header {
-  padding: 60px 15px;
-  background: #172b40;
+nav{
+ position:sticky;top:0;z-index:5;
+ background:#101e30;padding:17px 7%;
+ display:flex;justify-content:space-between;
+ align-items:center;border-bottom:1px solid #26384c;
 }
-h1, h2 {
-  color: #65d6c4;
+.logo{font-size:21px;font-weight:bold;color:#65d6c4}
+nav a{color:#d7e5ef;text-decoration:none;font-size:13px}
+.hero{
+ min-height:470px;padding:95px 20px 75px;
+ text-align:center;
+ background:radial-gradient(ellipse at top,#16465a,#091321 70%);
 }
-main {
-  padding: 30px 20px;
-  line-height: 1.8;
+.tag{
+ color:#65d6c4;letter-spacing:3px;font-size:12px;
 }
-footer {
-  padding: 20px;
-  background: #172b40;
+h1{font-size:clamp(38px,8vw,68px);margin:22px 0 10px}
+h1 span{color:#65d6c4}
+.hero p{
+ max-width:620px;margin:20px auto;
+ color:#b8c8d7;line-height:1.8;
 }
+.btn{
+ display:inline-block;padding:14px 23px;
+ background:#65d6c4;color:#071b24;
+ text-decoration:none;border-radius:8px;
+ font-weight:bold;margin:12px 5px;
+}
+.btn2{
+ background:transparent;border:1px solid #65d6c4;
+ color:#65d6c4;
+}
+section{padding:65px 8%;text-align:center}
+h2{font-size:30px;color:#65d6c4}
+.sub{color:#aebdca;line-height:1.8;max-width:650px;margin:15px auto 35px}
+.cards{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:18px;text-align:left;
+}
+.card{
+ background:#122238;border:1px solid #263c51;
+ padding:25px;border-radius:13px;
+}
+.card .symbol{font-size:30px;color:#65d6c4}
+.card h3{color:#e9f8ff}
+.card p{color:#adbdcc;line-height:1.7;font-size:14px}
+.about{background:#101e30}
+.status{
+ display:inline-block;padding:8px 14px;
+ border:1px solid #65d6c4;color:#65d6c4;
+ border-radius:30px;font-size:12px;
+}
+footer{
+ background:#07101c;text-align:center;
+ padding:35px 15px;color:#9eb0c0;
+}
+footer a{color:#65d6c4;text-decoration:none;margin:8px}
 </style>
 </head>
 <body>
-<header>
-<h1>NIRVANA AI</h1>
-<p>Your Personal AI Assistant</p>
+
+<nav>
+ <div class="logo">NIRVANA AI</div>
+ <a href="#tentang">Tentang Kami</a>
+</nav>
+
+<header class="hero">
+ <div class="tag">PERSONAL INTELLIGENCE SYSTEM</div>
+ <h1>Think Beyond.<br><span>Build with AI.</span></h1>
+ <p>
+ Selamat datang di Nirvana AI.
+ Sebuah proyek pengembangan asisten kecerdasan buatan
+ untuk membantu manusia bekerja, berkarya, dan
+ mengelola aktivitas digital.
+ </p>
+ <a class="btn" href="#fitur">Jelajahi Nirvana</a>
+ <a class="btn btn2" href="#tentang">Pelajari Proyek</a>
 </header>
-<main>
-<h2>Selamat Datang di Nirvana AI</h2>
-<p>
-Nirvana AI adalah proyek pengembangan
-asisten kecerdasan buatan untuk membantu
-membuat dan mengelola konten media sosial.
-</p>
-<p>
-Nirvana AI dikembangkan dengan mengutamakan
-privasi, keamanan, dan kendali pengguna.
-</p>
-<h2>Visi Kami</h2>
-<p>
-Mengembangkan asisten AI yang cerdas,
-bermanfaat, dan membantu aktivitas digital.
-</p>
-<p>Official Project Website</p>
-</main>
+
+<section id="fitur">
+ <h2>Ekosistem Nirvana AI</h2>
+ <p class="sub">
+ Satu visi untuk membangun asisten AI yang cerdas,
+ bermanfaat, aman, dan dapat dikembangkan secara bertahap.
+ </p>
+ <div class="cards">
+  <div class="card">
+   <div class="symbol">✧</div>
+   <h3>AI Assistant</h3>
+   <p>Asisten kecerdasan buatan untuk membantu tugas dan aktivitas digital.</p>
+  </div>
+  <div class="card">
+   <div class="symbol">▣</div>
+   <h3>Content Studio</h3>
+   <p>Pengembangan alat bantu pembuatan ide, naskah, dan konten video.</p>
+  </div>
+  <div class="card">
+   <div class="symbol">⚙</div>
+   <h3>Smart Automation</h3>
+   <p>Visi otomatisasi pekerjaan dengan kendali dan izin dari pemilik akun.</p>
+  </div>
+  <div class="card">
+   <div class="symbol">◈</div>
+   <h3>Privacy & Security</h3>
+   <p>Privasi, keamanan informasi, dan kendali pengguna menjadi prioritas.</p>
+  </div>
+ </div>
+</section>
+
+<section class="about" id="tentang">
+ <div class="status">PROJECT IN DEVELOPMENT</div>
+ <h2>Membangun Masa Depan AI</h2>
+ <p class="sub">
+ Nirvana AI dikembangkan secara bertahap.
+ Tujuannya adalah menciptakan asisten AI pribadi
+ yang dapat membantu pekerjaan manusia melalui
+ teknologi yang bertanggung jawab.
+ </p>
+ <a class="btn" href="#informasi">Kenali Nirvana</a>
+</section>
+
+<section id="informasi">
+ <h2>Visi Kami</h2>
+ <p class="sub">
+ Teknologi seharusnya membantu manusia berkembang.
+ Kami membangun Nirvana AI dengan prinsip
+ kecerdasan, keamanan, transparansi, dan kendali pengguna.
+ </p>
+</section>
+
 <footer>
-<p>Copyright 2026 Nirvana AI</p>
+ <div class="logo">NIRVANA AI</div>
+ <p>Personal Intelligence System</p>
+ <p>
+  <a href="privacy.html">Privacy Policy</a>
+  |
+  <a href="terms.html">Terms of Service</a>
+ </p>
+ <p>© 2026 Nirvana AI. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
